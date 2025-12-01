@@ -1,0 +1,12 @@
+<p>list works!</p>
+<div>
+    <h2>Car List</h2>
+    @if(carNames.length >0){
+    <ul>
+        <li *ngFor = "let carName of carNames"> {{carName}}</li>
+    </ul>
+}
+@else{
+    <p> No cars Available</p>
+}
+</div>
