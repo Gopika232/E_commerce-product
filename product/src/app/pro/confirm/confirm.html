@@ -1,0 +1,6 @@
+<h3>{{data.title}}</h3>
+ <p>{{data.message}}</p>
+ <div class="actions">
+ <button mat-button (click)="dialogRef.close(false)">No</button>
+ <button mat-raised-button color="warn" (click)="dialogRef.close(true)">Yes</button>
+ </div>

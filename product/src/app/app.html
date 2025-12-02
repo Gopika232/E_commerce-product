@@ -1,16 +1,10 @@
-<style>
-  nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px; /* space between items */
-    margin-bottom: 20px;
-  }
-</style>
-<h1>🏢 Employee Management Dashboard</h1>
-<nav>
-  <a class="a" routerLink="/list">Employee List</a>
-  <p>|</p>
-  <a class="a"routerLink="/add">Add Employee</a>
-</nav>
-<router-outlet></router-outlet>
+<mat-toolbar color="primary">
+  <span>{{ title }}</span>
+  <span class="spacer"></span>
+  <button mat-icon-button aria-label="cart">
+    <mat-icon>shopping_cart</mat-icon>
+  </button>
+</mat-toolbar>
+<div class="container">
+  <app-pro-list></app-pro-list>
+</div>
